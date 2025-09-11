@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aula 04 - Exercicio 02</title>
+</head>
+<body>
+  <form action="processa.php" method="post">
+    <label>Genero:</label><br>
+        <input type="radio" id="masculino" name="genero" value= "masculino">
+        <label for="masculino">Masculino</label><br>
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino">Feminino</label><br>
+        <input type="radio" id="Outro" name="genero" value="Outro">
+        <label for="Outro">Outro🌈</label>
+        <br>
+        <br>
+        <hr>
+        <label>Interesses:</label>
+        <select name="interesses" id="Interesses">
+            <option value="Tecnologia" selected>Tecnologia</option>
+            <option value="Esportes">Esportes</option>
+            <option value="Arte">Arte</option>
+            <option value="Música">Musica</option>
+        </select> 
+            <br>
+            <br>
+            <hr>
+        <label for="carros">Escolha um carro:</label>
+        <select id="carros" name="carros">
+            <optgroup label="Sedans">
+                <option value="corolla">Toyota Corolla</option>
+                <option value="civic">Honda Civic</option>
+            </optgroup>
+            <optgroup label="SUVs">
+                <option value="crv">Honda CR-V</option>
+                <option value="rav4">Toyota RAV4</option>
+            </optgroup>
+        </select>
+        <br>
+        <br>
+        <hr>
+        <input type="submit" value="Enviar">
+      </form>
+</body>
+</html>

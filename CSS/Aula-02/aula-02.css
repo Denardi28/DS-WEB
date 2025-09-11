@@ -1,0 +1,48 @@
+
+h1 {
+    text-shadow: 2px 2px 4px black ;
+    font-family: "Comic Neue", cursive;
+    font-weight: 300;
+    font-style: normal;
+  }
+p{
+    font-family: "Comic Neue", cursive;
+    font-weight: 300;
+    font-style: italic;
+ }
+
+img{
+    border: 5px solid black; 
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray; 
+    filter:blur(10px)
+ }
+ img:hover{
+    filter: blur(0px);
+ }
+ table, th, td { 
+    border: 1px solid black; 
+   } 
+    table { 
+    border-collapse: collapse; /* junta as bordas */ 
+   } 
+   th, td { 
+    padding: 10px; /* espaço interno */ 
+    text-align: center; /* centralizar texto */ 
+   } 
+   th { 
+    background-color: #333; 
+    color: white; 
+   } 
+   td { 
+     background-color: #f2f2f2; 
+    } 
+    tr:nth-child(even) { /* linhas pares */ 
+        background-color: #f9f9f9; 
+    } 
+    tr:nth-child(odd) { /* linhas ímpares */ 
+        background-color: #fff; 
+       } 
+       
+       
+       

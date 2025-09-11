@@ -1,0 +1,36 @@
+body{
+    background-color:black;
+}
+h1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: bl;
+    padding: 10px;
+    
+}
+.foto{
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    
+}
+.foto2{  
+    color: white;                  
+    text-align: center;            
+    width: 1500px ;
+    height: 100px;
+
+
+}
+
+.foto3{
+    display: flex;
+    justify-content: center;
+    width: 10px;
+    height: 10px;
+}
+    
+

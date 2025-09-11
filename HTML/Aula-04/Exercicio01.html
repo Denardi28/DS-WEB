@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Atividade 03 - Exercicio 01</title>
+</head>
+<body>
+    <h1>Primeiro Formulário de cadastro</h1>
+    <form action="processa.php" method="post">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="Nome completo" maxlength="50" pattern="[A-Za-z]" placeholder="Digite seu nome" required>
+        <br>
+        <br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu E-mail" required>
+        <br>
+        <br>
+
+        <label for="Senha">Senha:</label>
+        <input type="password" name="Senha" id="Senha" placeholder="Digite sua Senha" required>
+        <br>
+        <br>
+
+        <label for="Idade">Idade:</label>
+        <input type="number" name="Idade" id="Idade" min="1" max="120" placeholder="Digite sua Idade" required>
+        <br>
+        <br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
