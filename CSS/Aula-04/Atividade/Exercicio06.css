@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+}
+
+.Banner{
+    display: inline-block;
+    background-color: green;
+    height: 150px;
+    width: 100%;
+    padding: 15px;
+    align-content: center;
+    text-align: center;
+}
+.Texto{
+    align-content: center;
+    text-align: center;
+    height: 80px;
+    width: 400px;
+    margin-left: 550px;
+    padding: 20px;
+}

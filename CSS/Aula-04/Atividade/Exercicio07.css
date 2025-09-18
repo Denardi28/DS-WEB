@@ -1,0 +1,119 @@
+.div-centralizada{
+    margin-left: 450px;
+}
+.div-centralizada2{
+    margin-left: 450px;
+}
+.div-centralizada3{
+    margin-left: 450px;
+}
+.Cartao{
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+    background-color: rgb(240, 213, 121);
+    border: 5px solid black;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    padding: 15px;
+}
+.Cartao2{
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+    background-color: aquamarine;
+    border: 5px dotted black;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    padding: 15px;
+}
+.Cartao3{
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+    background-color: blue;
+    border: 5px double black;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    padding: 15px;
+}
+.Cartao4{
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+    background-color: purple;
+    border: 5px dotted black;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    padding: 15px;
+}
+.Cartao5{
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+    background-color: rgb(128, 53, 0);
+    border: 5px solid black;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    padding: 15px;
+}
+.Cartao6{
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+    background-color: rgb(179, 111, 9);
+    border: 5px dotted black;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    padding: 15px;
+}
+.Cartao7{
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+    background-color: rgb(7, 233, 7);
+    border: 5px double black;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    padding: 15px;
+}
+.Cartao8{
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+    background-color: orange;
+    border: 5px dotted black;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    padding: 15px;
+}
+.Cartao9{
+    display: inline-block;
+    align-content: center;
+    text-align: center;
+    background-color: red;
+    border: 5px solid black ;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+    padding: 15px;
+}
+.Cartao:hover,
+.Cartao2:hover,
+.Cartao3:hover,
+.Cartao4:hover,
+.Cartao5:hover,
+.Cartao6:hover,
+.Cartao7:hover,
+.Cartao8:hover,
+.Cartao9:hover {
+    color: white;
+} 
