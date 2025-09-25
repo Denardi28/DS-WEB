@@ -1,0 +1,11 @@
+.Caixa{
+    position: sticky;
+    height: 60px;
+    background-color: orange;
+    text-align: center;
+    align-content: center;
+    top: 0;
+}
+p{
+    font-size: x-large;
+}

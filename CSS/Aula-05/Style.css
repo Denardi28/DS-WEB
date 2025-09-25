@@ -1,0 +1,41 @@
+.Menu{
+    position: fixed;
+    height: 50px;
+    width: 200px;
+    background-color: blue;
+    text-align: center;
+    align-content: center;
+    top: 0;
+}
+
+.Caixa{
+    position: relative;
+    height: 2000px;
+    width: 100px;
+    background-color: red;
+    top: 50px;
+    text-align: center;
+    align-content: center;
+}
+
+.Sticky{
+    height: 50px;
+    width: 200px;
+    background-color: chocolate;
+    position: sticky;
+    top: 0;
+    text-align: center;
+    align-content: center;
+    margin: 200px 0px 0px 200px;
+}
+
+.Absoluta{
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    text-align: center;
+    align-content: center;
+    position: absolute;
+    left: 40%;
+    top: 50%;
+}

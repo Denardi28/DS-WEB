@@ -1,0 +1,18 @@
+.Caixa{
+    position: relative;
+    height: 300px;
+    width: 400px;
+    background-color: blue;
+    text-align: center;
+    align-content: center;
+}
+.Caixa02{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    text-align: center;
+    align-content: center;
+}

@@ -1,0 +1,91 @@
+.G{
+    position: sticky;
+    height: 50px;
+    width: 50px;
+    color: white;
+    top: 0;
+    background-color: rgb(0, 123, 255);
+    text-align: center;
+    align-content: center;
+}
+.U{
+    position: sticky;
+    height: 50px;
+    width: 50px;
+    top: 0px;
+    left: 50px;
+    background-color: rgb(0, 255, 123);
+    text-align: center;
+    align-content: center;
+}
+.I{
+    position: sticky;
+    height: 50px;
+    width: 50px;
+    top: 0;
+    left: 100px;
+    background-color: rgb(255, 230, 0);
+    text-align: center;
+    align-content: center;
+}
+.L{
+    position: sticky;
+    height: 50px;
+    width: 50px;
+    top: 0;
+    left: 150px;
+    background-color: red;
+    text-align: center;
+    align-content: center;
+}
+.H{
+    position: sticky;
+    height: 50px;
+    width: 50px;
+    top: 0;
+    left: 200px;
+    background-color: rgb(255, 0, 128);
+    text-align: center;
+    align-content: center;
+}
+.E{
+    position: sticky;
+    height: 50px;
+    width: 50px;
+    top: 0;
+    left: 250px;
+    background-color: rgb(212, 0, 255);
+    text-align: center;
+    align-content: center;
+}
+.R{
+    position: sticky;
+    height: 50px;
+    width: 50px;
+    top: 0;
+    left: 300px;
+    background-color: red;
+    text-align: center;
+    align-content: center;
+}
+.M{
+    position: sticky;
+    height: 50px;
+    width: 50px;
+    top: 0;
+    left: 350px;
+    background-color: rgb(115, 255, 0);
+    text-align: center;
+    align-content: center;
+}
+.E2{
+    position: sticky;
+    height: 50px;
+    width: 50px;
+    top: 0;
+    left: 400px;
+    background-color: rgb(0, 255, 162);
+    text-align: center;
+    align-content: center;
+}
+
