@@ -1,0 +1,306 @@
+.Partecima{
+    position: fixed;
+    font-family: "Comic Neue", cursive;
+}
+.Retangulo01{
+    background: rgb(32, 32, 186);
+    height: 100px;
+    width: 1538px;
+    margin-top: -20px;
+    align-content: center;
+    text-align: center;
+    margin-left: -10px;
+}
+
+.Título1{
+    margin-top: -70px;
+    text-align: center;
+    align-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    font-family: "Comic Neue", cursive;
+    font-weight: 300;
+    font-style: normal;
+}
+.Pagina_inicial{
+    margin-top: -50px;
+    color: rgb(22, 19, 19);
+    font-size: 20px;
+    margin-left: 50px;
+}
+a{
+   color: white;
+}
+.Cardapio{
+    margin-top: -30px;
+    color: white;
+    font-size: 20px;
+    margin-left: 350px;
+}
+.Promoções{
+    margin-top: -30px;
+    color: white;
+    font-size: 20px;
+    margin-left: 1050px;
+}
+.Reserva{
+    margin-top: -29px;
+    color: white;
+    font-size: 20px;
+    margin-left: 1300px;
+}
+.Retangulo03{
+    background: rgb(123, 123, 250);
+    height: 3200px;
+    width: 1523px;
+    margin-top: -400px;
+    align-content: center;
+    text-align: center;
+    margin-left: -10px;
+}
+.Retangulo04{
+    background: blanchedalmond;
+    border: 5px double black;
+    height: 350px;
+    width: 1300px;
+    margin-top: -2700px;
+    align-content: center;
+    text-align: center;
+    margin-left: 100px;
+}
+.Prato01{
+    margin-left: 225px;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+.Comida{
+    margin-top: -275px;
+}
+.Texto01{
+    font-size: 20px;
+    font-family: "Comic Neue", cursive;
+    margin-left: 150px;
+}
+.Preço01{
+    margin-top: -200px;
+    margin-left: 700px;
+    font-size: 100px;
+    color: black;
+    font-family: "Comic Neue", cursive;
+}
+.Lista01{
+    font-size: 15px;
+    margin-left: 425px;
+    margin-top: -100px;
+    font-family: "Comic Neue", cursive;
+}
+.Retangulo05{
+    background: blanchedalmond;
+    border: 5px double black;
+    height: 350px;
+    width: 1300px;
+    margin-top: 200px;
+    align-content: center;
+    text-align: center;
+    margin-left: 100px;
+}
+.Prato02{
+    margin-left: 225px;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+.Comida02{
+    margin-top: -275px;
+}
+.Texto02{
+    font-size: 20px;
+    font-family: "Comic Neue", cursive;
+    margin-left: 150px;
+}
+.Preço02{
+    margin-top: -200px;
+    margin-left: 700px;
+    font-size: 100px;
+    color: black;
+    font-family: "Comic Neue", cursive;
+}
+.Lista02{
+    font-size: 15px;
+    margin-left: 440px;
+    margin-top: -100px;
+    font-family: "Comic Neue", cursive;
+}
+.Retangulo06{
+    background: blanchedalmond;
+    border: 5px double black;
+    height: 350px;
+    width: 1300px;
+    margin-top: 200px;
+    align-content: center;
+    text-align: center;
+    margin-left: 100px;
+}
+.Prato03{
+    margin-left: 225px;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+.Comida03{
+    margin-top: -275px;
+}
+.Texto03{
+    font-size: 20px;
+    font-family: "Comic Neue", cursive;
+    margin-left: 150px;
+}
+.Preço03{
+    margin-top: -200px;
+    margin-left: 700px;
+    font-size: 100px;
+    color: black;
+    font-family: "Comic Neue", cursive;
+}
+.Lista03{
+    font-size: 15px;
+    margin-left: 430px;
+    margin-top: -100px;
+    font-family: "Comic Neue", cursive;
+}
+.Retangulo07{
+    background: blanchedalmond;
+    border: 5px double black;
+    height: 350px;
+    width: 1300px;
+    margin-top: 200px;
+    align-content: center;
+    text-align: center;
+    margin-left: 100px;
+}
+.Prato04{
+    margin-left: 225px;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+.Comida04{
+    margin-top: -275px;
+}
+.Texto04{
+    font-size: 20px;
+    font-family: "Comic Neue", cursive;
+    margin-left: 210px;
+}
+.Preço04{
+    margin-top: -200px;
+    margin-left: 700px;
+    font-size: 100px;
+    color: black;
+    font-family: "Comic Neue", cursive;
+}
+.Lista04{
+    font-size: 15px;
+    margin-left: 430px;
+    margin-top: -100px;
+    font-family: "Comic Neue", cursive;
+}
+.Link01{
+    color: black;
+    margin-left: 270px;
+}
+.Link02{
+    color: black;
+    margin-left: 270px;
+}
+.Link03{
+    color: black;
+    margin-left: 270px;
+}
+.Link04{
+    color: black;
+    margin-left: 270px;
+}
+.Retangulo08{
+    background: blanchedalmond;
+    border: 5px double black;
+    height: 350px;
+    width: 1300px;
+    margin-top: 200px;
+    align-content: center;
+    text-align: center;
+    margin-left: 100px;
+}
+.Prato05{
+    margin-left: 225px;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+.Comida05{
+    margin-top: -275px;
+}
+.Texto05{
+    font-size: 20px;
+    font-family: "Comic Neue", cursive;
+    margin-left: 120px;
+}
+.Preço05{
+    margin-top: -200px;
+    margin-left: 700px;
+    font-size: 100px;
+    color: black;
+    font-family: "Comic Neue", cursive;
+}
+.Lista05{
+    font-size: 15px;
+    margin-left: 430px;
+    margin-top: -100px;
+    font-family: "Comic Neue", cursive;
+}
+.Link05{
+    color: black;
+    margin-left: 270px;
+}
+.Retangulo09{
+    background: blanchedalmond;
+    border: 5px double black;
+    height: 350px;
+    width: 1300px;
+    margin-top: 200px;
+    align-content: center;
+    text-align: center;
+    margin-left: 100px;
+}
+.Prato06{
+    margin-left: 225px;
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+}
+.Comida06{
+    margin-top: -275px;
+}
+.Texto06{
+    font-size: 20px;
+    font-family: "Comic Neue", cursive;
+    margin-left: 170px;
+}
+.Preço06{
+    margin-top: -200px;
+    margin-left: 700px;
+    font-size: 100px;
+    color: black;
+    font-family: "Comic Neue", cursive;
+}
+.Lista06{
+    font-size: 15px;
+    margin-left: 430px;
+    margin-top: -100px;
+    font-family: "Comic Neue", cursive;
+}
+.Link06{
+    color: black;
+    margin-left: 270px;
+}

@@ -1,0 +1,100 @@
+.Partecima{
+    position: fixed;
+    font-family: "Comic Neue", cursive;
+}
+.Retangulo01{
+    background: rgb(32, 32, 186);
+    height: 100px;
+    width: 1540px;
+    margin-top: -12px;
+    align-content: center;
+    text-align: center;
+    margin-left: -10px;
+    z-index: 1;
+}
+
+.Título1{
+    margin-top: -70px;
+    text-align: center;
+    align-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    font-family: "Comic Neue", cursive;
+    font-weight: 300;
+    font-style: normal;
+}
+.Pagina_inicial{
+    margin-top: -50px;
+    color: white;
+    font-size: 20px;
+    margin-left: 50px;
+}
+a{
+   color: white;
+   z-index: 2;
+}
+.Cardapio{
+    margin-top: -30px;
+    color: white;
+    font-size: 20px;
+    margin-left: 350px;
+}
+.Promoções{
+    margin-top: -30px;
+    color: white;
+    font-size: 20px;
+    margin-left: 1050px;
+}
+.Reserva{
+    margin-top: -29px;
+    color: white;
+    font-size: 20px;
+    margin-left: 1300px;
+}
+.Retangulo02{
+    background: rgb(123, 123, 250);
+    height: 800px;
+    width: 1540px;
+    margin-top: -560px;
+    align-content: center;
+    text-align: center;
+    margin-left: -10px;
+    border-radius: 10px;
+}
+.Pesquisa{
+    text-align: center;
+    align-content: center;
+    margin-top: 100px;
+    font-family: "Comic Neue", cursive;
+    padding: 10px 10px 10px 10px;
+}
+.T04{
+    margin-left: -100px;
+}
+.T01{
+    margin-left: 18px;
+}
+.T02{
+    margin-left: 17px;
+}
+h2{
+    text-align: center;
+    align-content: center;
+    margin-top: 60px;
+}
+button{
+    color: black;
+    background-color: white;
+    padding: 10px 10px 10px 10px;
+}
+button:hover{
+    color: white;
+    background-color: blue;
+    animation-direction:normal;
+    animation: 1.5s;
+}
+input{
+    border-radius: 5px;
+}
+
+

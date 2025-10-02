@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Reservas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Cardápio</title>
+</head>
+<body>
+    <div class="Partecima">
+        <div class="Retangulo01"></div>
+        <h1 class="Título1"><strong>SABOR E ARTE</strong></h1>
+        <div class="Pagina_inicial">
+            <a href="Index.html"> PÁGINA INICIAL </a>
+        </div>
+        <div class="Cardapio">
+            <a href="Cardapio.html"> CARDÁPIO </a>
+        </div>
+        <div class="Promoções">
+            <a href="Promoções.html"> PROMOÇÕES </a>
+        </div>
+        <div class="Reserva">
+            <a href="Reservas.html"> RESERVAS </a>
+        </div>
+        <h2>FAÇA SUA RESERVA</h2>
+        <div class="Pesquisa">
+            <form action="processa.php" method="get">
+                <label class="T01" for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" placeholder="Digite o nome">
+                <br>
+                <br>
+                <label class="T02" for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Digite o email">
+                <br>
+                <br>
+                <label class="T03" for="number">Telefone:</label>
+                <input type="Number id="telefone" name="Telefone" maxlength="13" placeholder="Digite o telefone">
+                <br>
+                <br>
+                <label class="T04" for="Quantidade_de_pessoas">Quantidade de pessoas:</label>
+                <input type="number" id="Quantidade_de_pessoas" name="Quantidade_de_pessoas" placeholder="Quantidade de pessoas">
+                <br>
+                <br>
+            </form>
+            <form>
+                <label for="resumo">Observação: </label><br>
+                <textarea id="resumo" name="resumo" rows="6" cols="60" max-length="300" required>Queria uma mesa com 10 cadeiras, de preferência perto da cozinha.
+                </textarea>
+                <br><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </body>
+        </div>
+        <div class="Retangulo02"></div>
+    </div>
+</html>

@@ -1,0 +1,105 @@
+
+.Partecima{
+    position: fixed;
+    font-family: "Comic Neue", cursive;
+}
+.Retangulo01{
+    background: rgb(32, 32, 186);
+    height: 100px;
+    width: 1522px;
+    margin-top: -10px;
+    align-content: center;
+    text-align: center;
+    margin-left: -10px;
+    z-index: 1;
+}
+
+.Título1{
+    margin-top: -70px;
+    text-align: center;
+    align-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+    font-family: "Comic Neue", cursive;
+    font-weight: 300;
+    font-style: normal;
+}
+.Banner01{
+    height: 800px;
+    width: 1523px;
+    background: #ffffff;
+    margin-left: -10px;
+    margin-top: 90px;
+    border-radius: 10px;
+}
+.Pagina_inicial{
+    margin-top: -50px;
+    color: white;
+    font-size: 20px;
+    margin-left: 50px;
+}
+a{
+   color: white;
+   z-index: 2;
+}
+.Cardapio{
+    margin-top: -30px;
+    color: white;
+    font-size: 20px;
+    margin-left: 350px;
+}
+.Promoções{
+    margin-top: -30px;
+    color: white;
+    font-size: 20px;
+    margin-left: 1050px;
+}
+.Reserva{
+    margin-top: -29px;
+    color: white;
+    font-size: 20px;
+    margin-left: 1300px;
+}
+h2{
+    margin-top: 10px;
+    align-content: center;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-family: "Comic Neue", cursive;
+    color: white;
+}
+.Retangulo02{
+    background: rgb(32, 32, 186);
+    height: 100px;
+    width: 1522px;
+    margin-top: -90px;
+    align-content: center;
+    text-align: center;
+    margin-left: -10px;
+    margin-bottom: -10px;
+}
+h3{
+    color: blanchedalmond;
+    align-content: center;
+    text-align: center;
+    margin-top: 0px;
+    font-family: "Comic Neue", cursive;
+}
+.História{
+    color: blanchedalmond;
+    align-content: center;
+    text-align: center;
+    font-family: "Comic Neue", cursive;
+    margin-top: 50px;
+}
+.Retangulo03{
+    background: rgb(123, 123, 250);
+    height: 500px;
+    width: 1523px;
+    margin-top: -400px;
+    align-content: center;
+    text-align: center;
+    margin-left: -10px;
+    border-radius: 10px;
+}
