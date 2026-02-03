@@ -2,7 +2,7 @@
 
 
  Linguagens desenvolvidas
-
+<img
      align="" 
     alt="html" 
     title="Html"
