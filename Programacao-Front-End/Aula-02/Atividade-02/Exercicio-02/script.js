@@ -1,7 +1,12 @@
-function MudarConteudo(){
-    document.getElementById("conteudo").style.backgroundColor = "greenyellow";
-    document.getElementById("conteudo").innerHTML = "<p>Palmeiras não tem Mundial!</p>";   
+function Mudaimagem(){
+    document.getElementById("foto").setAttribute("src", "imagem1.jpg");
+}
+function Mudaimagem2(){
+    document.getElementById("foto").setAttribute("src", "imagem2.jpg"); 
 }
 
-var valor = document.getElementById("conteudo").innerHTML;
-console.log(valor);
+function Aparecer_cons(){
+    var resultado = document.getElementById("foto").getAttribute("src");
+    console.log(resultado);
+    
+}
