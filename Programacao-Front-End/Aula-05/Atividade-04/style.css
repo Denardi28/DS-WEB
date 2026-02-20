@@ -1,0 +1,54 @@
+body {
+    text-align: center;
+    background: rgb(1, 65, 1);
+}
+
+.nao, .sim{
+      display: inline-block;
+}
+
+.nao:hover, .sim:hover {
+    background-color: rgb(166, 255, 32);
+}
+
+.nao{
+    width: 500px;
+    height: 200px;
+    font-size: 150%;
+}
+
+.sim{
+   width: 500px;
+   height: 200px;
+    font-size: 150%;
+}
+
+h1{
+    color: white;
+}
+.havertz{
+    display: inline-block;
+    margin-top: 300px;
+    margin-left: 50px;
+    height: 300px;
+    width: 500px;
+}
+
+.pinga{
+    display: inline-block;
+    margin-bottom: 300px;
+    margin-right: 200px;
+}
+
+
+#lanterna {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* Permite clicar no conteúdo abaixo */
+    background-color: rgba(0, 0, 0, 0.9); /* Tela escura */
+    z-index: 1000;
+    transition: background 0.1s ease;
+}
