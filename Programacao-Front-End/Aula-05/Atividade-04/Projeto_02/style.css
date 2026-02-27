@@ -1,0 +1,81 @@
+body {
+    background-color: #050505;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.game-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shake {
+    animation: shakeAnim 0.2s;
+}
+
+@keyframes shakeAnim {
+    0% { transform: translate(2px, 2px); }
+    25% { transform: translate(-2px, -2px); }
+    50% { transform: translate(2px, -2px); }
+    75% { transform: translate(-2px, 2px); }
+    100% { transform: translate(0, 0); }
+}
+
+.header {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.stat-box {
+    background: #1a1a1a;
+    padding: 8px 12px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    min-width: 100px;
+    text-align: center;
+}
+
+canvas {
+    background-color: #000;
+    border: 4px solid #fff;
+    display: block;
+}
+
+#restartBtn {
+    display: none;
+    position: absolute;
+    top: 78%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 12px 20px;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #000;
+    background-color: #00ff00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #00ff00;
+    z-index: 10;
+}
+
+#restartBtn:hover {
+    background-color: #00cc00;
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+.footer {
+    margin-top: 15px;
+    color: #555;
+    font-size: 0.9rem;
+}

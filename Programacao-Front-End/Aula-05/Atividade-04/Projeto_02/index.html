@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frogger Pro - O Desafio Final</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-wrapper" id="wrapper">
+        <div class="header">
+            <div class="stat-box">Nível: <span id="level">1</span>/10</div>
+            <div class="stat-box">Vidas: <span id="lives">3</span></div>
+            <div class="stat-box">Pontos: <span id="score">0</span></div>
+        </div>
+        
+        <div style="position: relative;">
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+            <button id="restartBtn">JOGAR NOVAMENTE</button>
+        </div>
+        
+        <div class="footer">
+            <p>Chegue ao <b>Nível 10</b> para vencer!</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
