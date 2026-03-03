@@ -15,6 +15,7 @@
     }
 }
 
+
 class Eletronico extends Produto {
         public function calcularDesconto(){
         if ($this->estoque < 5) {
