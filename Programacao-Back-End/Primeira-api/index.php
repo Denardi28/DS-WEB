@@ -1,8 +1,9 @@
 <?php
 
-header('Content-Type: application/json'); // Define o tipo de conteúdo da resposta como JSON
-header('Access-Control-Allow-Origin: *'); // Permite requisições de qualquer origem (CORS)
-header('Access-Control-Allow-Methods: GET, POST'); // Define os métodos HTTP permitidos
+header('Content-Type: application/json');
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: GET, POST, PUT, DELETE, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type');
 
 $method = $_SERVER['REQUEST_METHOD']; // Captura o método HTTP da requisição atual (GET, POST, etc.)
 $path   = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH); // Extrai apenas o caminho da URL, ignorando query string
