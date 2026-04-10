@@ -12,7 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
 document.getElementById('botaoEnviar').addEventListener('click', postProduto)
 
 async function getProdutos() {
-    var requisicao = await fetch("http://localhost/cafeteria-api/produtos")
+    
+    var requisicao = await fetch("http://localhost/cafeteria-api/controllers/produtos.php")
     var resposta = await requisicao.json()
 
     console.log(resposta)
@@ -21,10 +22,10 @@ async function getProdutos() {
         <tr>
             <td>${item.id}</td>
             <td>${item.nome}</td>
-            <td>${item.preco}</td>
+            <td>R$ ${parseFloat(item.preco).toFixed(2)}</td>
             <td>${item.categoria_id}</td>
-            <td>${item.disponivel}</td>
-            <td><button onclick="deleteProduto(${item.id})">Deletar</button></td>
+            <td>${item.disponivel == 1 ? 'Sim' : 'Não'}</td>
+            <td><button onclick="deleteProduto(${item.id})" class="btn-excluir">Deletar</button></td>
         </tr>
     `).join("")
     
@@ -51,22 +52,27 @@ async function getProdutos() {
 }
 
 async function getCategorias() {
-    var requisicao = await fetch("http://localhost/cafeteria-api/categorias")
+    
+    var requisicao = await fetch("http://localhost/cafeteria-api/controllers/categorias.php")
     var resposta = await requisicao.json()
 
-    console.log(resposta)
-
     const select = document.getElementById("categoria_id")
-
-    select.innerHTML = `
-        <option value="">Selecione uma categoria</option>
-    ` + resposta.data.map(cat => `
-        <option value="${cat.id}">${cat.nome}</option>
-    `).join("")
+    if (select) {
+        select.innerHTML = `<option value="">Selecione uma categoria</option>` + 
+        resposta.data.map(cat => `
+            <option value="${cat.id}">${cat.nome}</option>
+        `).join("")
+    }
 }
 
 async function postProduto() {
-    var requisicao = await fetch("http://localhost/cafeteria-api/produtos", {
+    if (!inputNome.value || !inputPreco.value || !inputCategoria.value) {
+        alert("Preencha todos os campos!");
+        return;
+    }
+
+    
+    var requisicao = await fetch("http://localhost/cafeteria-api/controllers/produtos.php", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -79,8 +85,7 @@ async function postProduto() {
     })
 
     var resposta = await requisicao.json()
-    console.log(resposta)
-
+    
     inputNome.value = ""
     inputPreco.value = ""
     inputCategoria.value = ""
@@ -89,12 +94,21 @@ async function postProduto() {
 }
 
 async function deleteProduto(id) {
-    var requisicao = await fetch("http://localhost/cafeteria-api/produtos/" + id, {
+    if (!confirm("Tem certeza que deseja deletar este produto?")) return;
+
+    
+    var requisicao = await fetch("http://localhost/cafeteria-api/controllers/produtos.php?id=" + id, {
         method: "DELETE"
     })
 
     var resposta = await requisicao.json()
     console.log(resposta)
+
+    if (resposta.status === 'success') {
+        alert("Produto removido!");
+    } else {
+        alert("Erro: " + resposta.message);
+    }
 
     getProdutos()
 }

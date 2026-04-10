@@ -37,7 +37,10 @@ async function carregarProdutos() {
 async function adicionarItem() {
     const idProd = selectProdutos.value;
     const qtd = inputQtd.value;
-    if (!idProd || qtd < 1) return;
+    if (!idProd || qtd < 1) {
+        alert("Selecione um produto e a quantidade correta.");
+        return;
+    }
 
     try {
         await fetch("http://localhost/cafeteria-api/controllers/itens-pedidos.php", {
@@ -49,6 +52,7 @@ async function adicionarItem() {
                 quantidade: qtd
             })
         });
+        inputQtd.value = 1;
         carregarItensDoPedido();
     } catch (error) {
         console.error(error);
@@ -66,17 +70,40 @@ async function carregarItensDoPedido() {
             res.data.forEach(item => {
                 const subtotal = item.quantidade * item.preco;
                 total += subtotal;
+                
+                
                 tabelaCorpo.innerHTML += `
                     <tr>
                         <td>${item.nome_produto}</td>
                         <td>${item.quantidade}</td>
                         <td>R$ ${parseFloat(item.preco).toFixed(2)}</td>
                         <td>R$ ${subtotal.toFixed(2)}</td>
+                        <td>
+                            <button onclick="removerItem(${item.id})" class="btn-remover">Remover</button>
+                        </td>
                     </tr>`;
             });
             if(spanTotal) spanTotal.textContent = `R$ ${total.toFixed(2)}`;
         }
     } catch (error) {
         console.error(error);
+    }
+}
+
+
+async function removerItem(id) {
+    if (!confirm("Deseja tirar este item do pedido?")) return;
+
+    try {
+        const req = await fetch(`http://localhost/cafeteria-api/controllers/itens-pedidos.php?id=${id}`, {
+            method: "DELETE"
+        });
+        const res = await req.json();
+
+        if (res.status === 'success') {
+            carregarItensDoPedido(); // Recarrega para atualizar total e tabela
+        }
+    } catch (error) {
+        console.error("Erro ao remover item:", error);
     }
 }

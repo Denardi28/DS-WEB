@@ -1,24 +1,24 @@
 <?php
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: Content-Type");
-header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
-header('Content-Type: application/json'); // Informa que o retorno é JSON
+header("Access-Control-Allow-Methods: GET, POST, DELETE, OPTIONS"); // DELETE adicionado aqui
+header('Content-Type: application/json');
 
-// Caminho corrigido para subir um nível e achar o database.php
 require_once __DIR__ . '/../database.php'; 
-
 $database = new Database();
+
 $method = $_SERVER['REQUEST_METHOD'];
+
+// Captura o ID vindo do parâmetro ?id= (enviado pelo seu JS)
+$id = $_GET['id'] ?? null;
 
 switch($method){
     case 'GET':
         try {
             $resultado = $database->executeQuery('SELECT * FROM produtos');
-            $produtos = $resultado->fetchAll(PDO::FETCH_ASSOC);
-
             echo json_encode([
                 'status' => 'success',
-                'data'   => $produtos
+                'data'   => $resultado->fetchAll(PDO::FETCH_ASSOC)
             ]);
         } catch (Exception $e) {
             http_response_code(500);
@@ -51,16 +51,26 @@ switch($method){
         break;
 
     case 'DELETE':
-        $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-        $segments = explode('/', trim($path, '/'));
-        $id = end($segments);
-
-        if (!is_numeric($id)) {
-            echo json_encode(['status' => 'error', 'message' => 'ID inválido']);
+        // Validação do ID
+        if (!$id || !is_numeric($id)) {
+            echo json_encode(['status' => 'error', 'message' => 'ID inválido ou não informado']);
             break;
         }
 
-        $database->executeQuery('DELETE FROM produtos WHERE id = :id', [':id' => $id]);
-        echo json_encode(['status' => 'success', 'message' => 'Removido']);
+        try {
+            // 1. Remove os itens de pedidos que usam este produto para evitar erro de chave estrangeira
+            $database->executeQuery('DELETE FROM pedido_itens WHERE produto_id = :id', [':id' => $id]);
+
+            // 2. Remove o produto
+            $stmt = $database->executeQuery('DELETE FROM produtos WHERE id = :id', [':id' => $id]);
+
+            if ($stmt->rowCount() === 0) {
+                echo json_encode(['status' => 'error', 'message' => 'Produto não encontrado']);
+            } else {
+                echo json_encode(['status' => 'success', 'message' => 'Produto removido com sucesso']);
+            }
+        } catch (Exception $e) {
+            echo json_encode(['status' => 'error', 'message' => 'Erro ao deletar: ' . $e->getMessage()]);
+        }
         break;
 }
