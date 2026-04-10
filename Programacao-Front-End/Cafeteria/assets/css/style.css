@@ -9,6 +9,11 @@ h2, p {
   margin: 10px;
 }
 
+h1 {
+  align-items: center;
+  text-align: center;
+  color: brown;
+}
 
 
 /* ========== Estilização para o Menu ========== */
