@@ -1,0 +1,19 @@
+{
+    "name": "denardi/composer",
+    "description": "Teste do Composer",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Denardi\\Composer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Denardi28",
+            "email": "guidenardi28@gmail.com"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "^3.10"
+    }
+}

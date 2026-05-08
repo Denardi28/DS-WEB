@@ -1,0 +1,3 @@
+[2026-04-28T20:02:45.401561+02:00] meu-app.INFO: Aplicação iniciada [] []
+[2026-04-28T20:02:45.415810+02:00] meu-app.WARNING: Isso é um aviso [] []
+[2026-04-28T20:02:45.415891+02:00] meu-app.ERROR: Isso é um erro [] []
